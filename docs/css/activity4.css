@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(hwb(145 2% 57% / 0.51), rgb(6, 6, 6));
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+   float: right;
+    padding: 5px;
+}
+
+.image-container img {
+    border: 5px solid #00000062; /* Bright yellow border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(209, 36, 36, 0.3); /* Shadow effect */
+}
+
+h1 {
+    color: #faf6f4; /* Orange color for main headings */
+    text-align: left; /* Align text to the left */
+    text-shadow: 2px 2px red;
+}
+
+h2 {
+    color: #4682b4; /* Steel blue color for subheadings */
+    text-shadow: 2px 2px red;
+}
+
+details {
+    background-color: #e6f7ff; /* Light blue background for details */
+    border: 1px solid #add8e6; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the details box */
+    margin-bottom: 20px; /* Space below the details box */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    background-color: #ffe4e1; /* Light pink background for list items */
+    margin: 5px 0; /* Space between list items */
+    padding: 10px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+}
+
+li:hover {
+    background-color: #ffb6c1; /* Darker pink on hover */
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: px;
+    width: 150px;
+  }
+  .resume-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+  /* Animation classes */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.highlight {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.resume-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Achievement list hover effect */
+ul li {
+    transition: transform 0.3s ease, padding-left 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+    padding-left: 10px;
+}
